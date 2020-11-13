@@ -283,6 +283,11 @@ spec:
                       plugin. This is currently not implemented.
                     type: object
                     properties:
+                      enableIPsec:
+                        description: EnableIPsec enables IPsec encryption on all pod-pod
+                          traffic within the cluster. If unset, the plugin will default
+                          EnableIPsec to false.
+                        type: boolean
                       genevePort:
                         description: geneve port is the UDP port to be used by geneve
                           encapulation. Default is 6081

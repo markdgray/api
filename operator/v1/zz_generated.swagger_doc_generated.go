@@ -822,6 +822,7 @@ var map_OVNKubernetesConfig = map[string]string{
 	"mtu":                 "mtu is the MTU to use for the tunnel interface. This must be 100 bytes smaller than the uplink mtu. Default is 1400",
 	"genevePort":          "geneve port is the UDP port to be used by geneve encapulation. Default is 6081",
 	"hybridOverlayConfig": "HybridOverlayConfig configures an additional overlay network for peers that are not using OVN.",
+	"enableIPsec":         "EnableIPsec enables IPsec encryption on all pod-pod traffic within the cluster. If unset, the plugin will default EnableIPsec to false.",
 }
 
 func (OVNKubernetesConfig) SwaggerDoc() map[string]string {

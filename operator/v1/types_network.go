@@ -321,6 +321,10 @@ type OVNKubernetesConfig struct {
 	// not using OVN.
 	// +optional
 	HybridOverlayConfig *HybridOverlayConfig `json:"hybridOverlayConfig,omitempty"`
+	// EnableIPsec enables IPsec encryption on all pod-pod traffic within the cluster. If unset, the plugin will default
+	// EnableIPsec to false.
+	// +optional
+	EnableIPsec *bool `json:"enableIPsec,omitempty"`
 }
 
 type HybridOverlayConfig struct {
